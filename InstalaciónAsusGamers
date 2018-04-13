@@ -1,0 +1,17 @@
+Yo lo he conseguido con la versión 16.04.1, a ver, como este asus viene con UEFI, inicié el booteable de ubuntu en modo UEFI,
+y cuando me salió el menú, seleccioné la opción de probar sin instalar, le di a la tecla "e" para configurar el inicio, 
+y después de la palabra splash y antes de los "---",hay que escribir los siguientes comandos 
+
+"nouveau.modeset=0 tpm_tis.interrupts=0 acpi_iso=Linux i915.preliminary_hw_support=1 idle=nomwait", y luego a f10,
+se iniciará y dentro le la prueba le das al instalador,
+y en el instalar habrá cierto paso donde te saldrá que hay problemas con UEFI que puede que luego no reconozca otros 
+sistemas operativos, te da dos opciones y le das a volver, saltará al siguiente paso y sigues como siempre,
+ya instalado reinicias, inicias normal y te saldrá ya GRUB, seleccionas ubuntu y le das a la tecla "e" otra vez,
+luego escribes los mismos comando de antes después de "quiet splash",
+le das a f10 y listo inicia, por si te pasa como a mi y tenias otro sistema operativo instalado y ahora no te sale,
+una vez dentro en la consola escribes "update-grub2" y listo te saldrán todos, luego vas a grub.cfg "gedit /boot/grub/grub.cfg",
+buscas las opciones de inicio de ubuntu y escribes los comandos para que ya no tengas que volver a hacerlo,
+y listo asi ya tienes ubuntu junto con otros sistemas operativos, ahora estoy con los drivers liado y 
+todo eso a ver si hay suerte.
+
+espero que a alguien le sirva, saludos.
