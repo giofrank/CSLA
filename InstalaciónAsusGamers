@@ -14,4 +14,17 @@ buscas las opciones de inicio de ubuntu y escribes los comandos para que ya no t
 y listo asi ya tienes ubuntu junto con otros sistemas operativos, ahora estoy con los drivers liado y 
 todo eso a ver si hay suerte.
 
+
+
+
+**************************************
+una ves dentro de ubuntu , cambiar el grub 
+sudo nano /etc/default/grub
+
+GRUB_CMDLINE_LINUX_DEFAULD="quiet splash nouveau.modeset=0  tpm_tis.interrupts=0 acpi_backlight=native i915.preliminary_hw_support=1 idle=nomwait"
+
+
 espero que a alguien le sirva, saludos.
+
+Creditos -
+https://rog.asus.com/forum/showthread.php?81702-Linux-installation-in-ASUS-ROG-GL552VW-DH71%2Fpage2
